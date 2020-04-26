@@ -63,4 +63,26 @@ dia:    cmp     bx, 21Fh
 	jb      calculo
 
 
+;EJERCICIO 3
+
+	mov     ax, 0d
+	mov     [220h], ax  
+	mov     ax, 1d
+	mov     [221h], ax 
+	mov     bx, 222h
+
+fibo:   mov     ax, 0000h
+	mov     [bx], ax
+	sub     bx, 2h
+	mov     al, [bx]
+	add     bx, 1h
+	add     ax, [bx]
+	add     bx, 1h
+	mov     [bx], ax
+	inc     bx
+
+	cmp     bx, 22Fh
+	jb      fibo
+
+
 	int 20h
