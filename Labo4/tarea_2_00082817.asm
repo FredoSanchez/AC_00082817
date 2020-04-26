@@ -15,24 +15,26 @@
         mov [200h], cl
         mov     cl, "N"
         mov [201h], cl
+
         mov     cl, "E"
-        mov [202h], cl
+        mov [203h], cl
 	mov     cl, "L"
-	mov [203h], cl
-	mov     cl, "S"
 	mov [204h], cl
+
+	mov     cl, "S"
+	mov [206h], cl
 	mov     cl, "E"
-	mov [205h], cl
+	mov [207h], cl
 	mov     cl, "G"
-	mov [206h], cl
-	mov     cl, "U"
-	mov [206h], cl
-	mov     cl, "N"
 	mov [208h], cl
-	mov     cl, "D"
+	mov     cl, "U"
 	mov [209h], cl
-	mov     cl, "0"
+	mov     cl, "N"
 	mov [20Ah], cl
+	mov     cl, "D"
+	mov [20Bh], cl
+	mov     cl, "0"
+	mov [20Ch], cl
 
 
 	int 20h
