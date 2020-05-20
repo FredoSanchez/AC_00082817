@@ -17,6 +17,12 @@ section .text
 	mov	[210h], ah
 	call 	phrase2
 
+	mov	ah, 21d
+	mov	[200h], ah
+	mov 	ah, 20d
+	mov	[210h], ah
+	call 	phrase3
+
 	call	kbwait
 
 	int 	20h
