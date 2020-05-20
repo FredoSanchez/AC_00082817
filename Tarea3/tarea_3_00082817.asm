@@ -7,7 +7,7 @@ section .text
 
 	mov	ah, 4d
 	mov	[200h], ah
-	mov 	ah, 10d
+	mov 	ah, 17d
 	mov	[210h], ah
 	call 	phrase1
 
@@ -19,7 +19,7 @@ section .text
 
 	mov	ah, 21d
 	mov	[200h], ah
-	mov 	ah, 20d
+	mov 	ah, 5d
 	mov	[210h], ah
 	call 	phrase3
 
