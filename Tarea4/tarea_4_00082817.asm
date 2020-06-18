@@ -2,9 +2,9 @@ org 	100h
 
 section .text
 
-    xor 	si, si 	
-    mov 	dx, msg
-    call 	print
+    	xor 	si, si 	
+    	mov 	dx, msg
+    	call 	print
     
 
 input:
@@ -69,7 +69,7 @@ res3:	mov 	dx, msg3
 	call 	print
 	ret
 
-res4:	mov 	dx, 4
+res4:	mov 	dx, msg4
 	call 	print
 	ret
 
